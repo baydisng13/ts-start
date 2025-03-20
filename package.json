@@ -1,0 +1,30 @@
+{
+  "name": "my-basic-ts-starter",
+  "version": "1.0.0",
+  "description": "A basic starter project for TypeScript",
+  "scripts": {
+    "dev": "echo 'Starting TypeScript in dev mode with ts-node...' && ts-node src/index.ts",
+    "watch": "echo 'Watching for TypeScript changes and compiling to dist/' && tsc --watch",
+    "build": "echo 'Cleaning and building TypeScript project...' && rimraf dist && tsc",
+    "start": "echo 'Starting compiled JavaScript from dist/' && node dist/index.js",
+    "lint": "pnpm biome lint --write ./src",
+    "format": "pnpm biome format ./src",
+    "check": "pnpm biome check ./src"
+  },
+  "keywords": [
+    "typescript",
+    "starter"
+  ],
+  "author": "Theodore Negusu",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
+
+
